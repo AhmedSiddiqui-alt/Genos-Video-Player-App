@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "837206982542",
+    "firebase_url": "https://genos-c2a9f-default-rtdb.firebaseio.com",
+    "project_id": "genos-c2a9f",
+    "storage_bucket": "genos-c2a9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837206982542:android:83d521fb18748971192edf",
+        "android_client_info": {
+          "package_name": "com.example.Genos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837206982542-f54n2234fnm395lcs7fhbaj6sng9numr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8bb3BGz3ynSEREIyLJqkH_Csg2gOGlVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837206982542-f54n2234fnm395lcs7fhbaj6sng9numr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
