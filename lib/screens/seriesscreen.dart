@@ -36,7 +36,8 @@ class SeriesScreen extends StatelessWidget {
                 color: Colors.white, borderRadius: BorderRadius.circular(40)),
             child: FlatButton(
                 onPressed: () {
-                  Navigator.of(context).pushNamed(SeriesPosterScreen.routeName);
+                  Navigator.of(context)
+                      .pushReplacementNamed(SeriesPosterScreen.routeName);
                 },
                 child: Row(
                   children: <Widget>[

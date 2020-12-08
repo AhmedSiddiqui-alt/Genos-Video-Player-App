@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 import '../providers/seriesProvider.dart';
-import '../widgets/poster.dart';
 import 'package:provider/provider.dart';
 
 class PreviewScreen extends StatefulWidget {
@@ -42,7 +41,7 @@ class _PreviewScreenState extends State<PreviewScreen> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          'Prview',
+          'Preview',
           style: TextStyle(color: Colors.white),
         ),
       ),

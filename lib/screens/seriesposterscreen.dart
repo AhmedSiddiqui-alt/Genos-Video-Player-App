@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../providers/seriesProvider.dart';
 import '../widgets/poster.dart';
 import '../widgets/casts.dart';
+import '../screens/episodescreen.dart';
 
 class SeriesPosterScreen extends StatefulWidget {
   static const routeName = 'SeriesPosterScreen';
@@ -13,13 +14,17 @@ class SeriesPosterScreen extends StatefulWidget {
 
 class _SeriesPosterScreenState extends State<SeriesPosterScreen> {
   bool isLoading = true;
+  bool init = true;
   @override
   void didChangeDependencies() {
-    Future.delayed(Duration(seconds: 4)).then((_) {
-      setState(() {
-        isLoading = false;
+    if (init) {
+      Future.delayed(Duration(seconds: 4)).then((_) {
+        setState(() {
+          isLoading = false;
+        });
       });
-    });
+    }
+    init = false;
   }
 
   Widget build(BuildContext context) {
@@ -32,6 +37,14 @@ class _SeriesPosterScreenState extends State<SeriesPosterScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.remove_red_eye),
+              onPressed: () {
+                Navigator.of(context)
+                    .pushReplacementNamed(EpisodeScreen.routeName);
+              })
+        ],
         backgroundColor: Colors.black54,
         title: Text(
           'The Family Man',

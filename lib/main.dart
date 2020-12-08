@@ -6,6 +6,8 @@ import './providers/seriesProvider.dart';
 import './screens/previewscreen.dart';
 import './providers/episodeProvider.dart';
 import './screens/uploadepisodescreen.dart';
+import './screens/episodescreen.dart';
+import './screens/episodevideoscreen.dart';
 
 void main() {
   runApp(App());
@@ -24,7 +26,9 @@ class App extends StatelessWidget {
             routes: {
               SeriesPosterScreen.routeName: (ctx) => SeriesPosterScreen(),
               PreviewScreen.routeName: (ctx) => PreviewScreen(),
-              UploadEpisodeScreen.routeName: (ctx) => UploadEpisodeScreen()
+              UploadEpisodeScreen.routeName: (ctx) => UploadEpisodeScreen(),
+              EpisodeScreen.routeName: (ctx) => EpisodeScreen(),
+              EpisodeVideoScreen.routeName: (ctx) => EpisodeVideoScreen()
             },
             home: SeriesScreen()));
   }

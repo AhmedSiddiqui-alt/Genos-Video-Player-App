@@ -1,9 +1,8 @@
 import 'package:flutter/foundation.dart';
-import 'dart:io';
 
 class Episode {
   final String episodeId;
-  final File episodes;
+  final dynamic episodes;
   final String episodeName;
   final String episodeDescription;
   final DateTime date;
